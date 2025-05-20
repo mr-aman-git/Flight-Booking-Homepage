@@ -18,7 +18,7 @@ export default function Header() {
     <motion.header
       className={`fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center transition-colors duration-300 ${
         scrolled
-          ? "bg-white/80 backdrop-blur-md shadow-md text-black"
+          ? "backdrop-blur-md bg-white/30 border-b border-white/20 py-2"
           : "fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md px-6 py-4 flex justify-between items-center"
       }`}
       initial={{ y: -60, opacity: 0 }}

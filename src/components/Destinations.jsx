@@ -4,6 +4,7 @@ import Paris from "../assets/paris.png";
 import Tokyo from "../assets/tokyo.png";
 import Sydney from "../assets/Sydney.png";
 import Dubai from "../assets/Dubai.png";
+import { Link } from "react-scroll";
 
 const destinations = [
   { city: "New York", image: `${NewYork}` },
@@ -18,7 +19,9 @@ export default function Destinations() {
     <section className="py-16 bg-blue-50">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">
-          Top Destinations
+          <Link to="destinations" smooth={true} duration={500}>
+            Top Destinations
+          </Link>
         </h2>
         <div className="flex space-x-6 overflow-x-auto pb-4 pt-2 scrollbar-hide">
           {destinations.map((dest, index) => (

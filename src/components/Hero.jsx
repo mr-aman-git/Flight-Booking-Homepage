@@ -33,6 +33,7 @@ export default function Hero() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
+          onClick={() => document.getElementById('search-box').scrollIntoView({ behavior: 'smooth' })}
           className="mt-8 px-6 py-3 bg-blue-600 text-white rounded-full font-semibold shadow-md hover:bg-blue-700 cursor-pointer"
         >
           Search Flights
