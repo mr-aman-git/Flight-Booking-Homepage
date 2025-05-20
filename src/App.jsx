@@ -1,9 +1,13 @@
-import React from 'react'
+import Hero from "./components/Hero";
+import SearchBox from "./components/SearchBox";
 
-const App = () => {
+function App() {
   return (
-    <div>App</div>
-  )
+    <div className="bg-blue-50 min-h-screen">
+      <Hero />
+      <SearchBox />
+    </div>
+  );
 }
 
-export default App
+export default App;
