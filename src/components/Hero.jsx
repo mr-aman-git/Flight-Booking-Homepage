@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <div className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-      {/* Background Video */}
+      
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src="/Flight.mp4"
@@ -13,11 +13,11 @@ export default function Hero() {
         playsInline
       />
 
-      {/* Dark Overlay */}
+      
       <div className="absolute inset-0 bg-black/30 z-10" />
 
 
-      {/* Hero Content */}
+      
       <motion.div
         className="relative z-20 text-center text-white px-4"
         initial={{ opacity: 0, y: -40 }}

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
 
-  // Handle scroll event
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
@@ -26,10 +25,15 @@ export default function Header() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
-      {/* Logo */}
-      <div className="text-xl font-bold">✈️ FlyNow</div>
+      <motion.div
+        initial={{ scale: 1 }}
+        animate={scrolled ? { scale: 0.9 } : { scale: 1 }}
+        transition={{ duration: 0.3 }}
+        className="text-xl font-bold"
+      >
+        ✈️ FlyNow
+      </motion.div>
 
-      {/* Nav Links */}
       <nav className="hidden md:flex gap-6 font-semibold">
         <a href="#" className="hover:text-blue-500 transition">
           Home
