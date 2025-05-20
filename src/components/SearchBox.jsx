@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { FaPlaneDeparture } from "react-icons/fa";
+import { motion } from "framer-motion"; 
 import { MdDateRange } from "react-icons/md";
 import flights from "../data/FlightData";
 
@@ -170,9 +169,8 @@ export default function SearchBox() {
               >
                 <div className="flex justify-between items-center mb-4">
                   <div className="flex items-center gap-2">
-                    <FaPlaneDeparture className="text-xl text-blue-600" />
                     <h4 className="text-lg font-bold text-blue-700">
-                      {flight.airline}
+                     ✈️ {flight.airline}
                     </h4>
                   </div>
                   <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
